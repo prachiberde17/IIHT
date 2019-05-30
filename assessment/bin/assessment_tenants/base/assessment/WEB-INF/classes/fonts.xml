@@ -1,0 +1,19 @@
+<fontFamilies>
+
+<fontFamily name="gnu-free">
+
+    <normal>fonts/gnu-free/FreeSans.ttf</normal>
+
+    <bold>fonts/gnu-free/FreeSans.ttf</bold>
+
+    <italic>fonts/gnu-free/FreeSans.ttf</italic>
+
+    <boldItalic>fonts/gnu-free/FreeSans.ttf</boldItalic>
+
+    <pdfEncoding>Identity-H</pdfEncoding>
+
+    <pdfEmbedded>true</pdfEmbedded>
+
+  </fontFamily>
+
+</fontFamilies>

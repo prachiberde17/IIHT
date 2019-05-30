@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IIHT</title>
+        <link href="https://fonts.googleapis.com/css?family=Segoe+UI" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <div class="maincontainer">            
+
+            <div class="wrapper">
+                <div class="row row-offcanvas row-offcanvas-left">
+                    <!-- sidebar -->
+		   <jsp:include page="side.jsp" /> 
+                 
+                    <!-- /sidebar -->
+
+                    <!-- main right col -->
+                    <div class="column col-sm-10 col-xs-11" id="main">
+
+                        <div class="rightside">
+                            <div class="topmenu text-right">
+                                <a href="add_question.html">Add New</a>
+                                <a href="#">Import</a>
+                                <div class="pagination">
+                                    <a href="#"><i class="fa fa-arrow-left"></i></a>
+                                    4/40
+                                    <a href="#"><i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+
+                            <div class="questiontable">
+                                <div class="questionheading">
+                                    <div class="left">
+                                        <h3>Section Bank</h3>
+                                    </div>
+                                    <div class="right">
+                                        <div class="searchdata">
+                                            <input type="text" placeholder="Search a question">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+
+                                        <div class="filter">
+                                            <a href="#"><img src="images/ic_sort.png">Sort</a>
+                                            <a href="#"><img src="images/ic_filter.png">Filter</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="questiontablelist" style="overflow-x:auto;">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th><img src="images/icon-selectionmode.png">Question</th>
+                                                <th>Category</th>
+                                                <th>Difficulty Level</th>
+                                                <th>Updated On</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td width="48%" class="qname">"If there is a following code - See below in one of your methods in your class. Af if that method is executed, then how many objects are created in the JVM String str...</td>
+                                                <td width="18%" class="qname">Java</td>
+                                                <td width="18%">Easy</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">When does one configure JVM in serial Garbage Collection mode?</td>
+                                                <td width="18%" class="qname">Java / JVM</td>
+                                                <td width="18%">Easy</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">What is the function of Bootstrap Class loader?</td>
+                                                <td width="18%" class="qname">Java</td>
+                                                <td width="18%">Moderate</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">In JVM, Which memory areas does instance and static variables use ?</td>
+                                                <td width="18%" class="qname">Java</td>
+                                                <td width="18%">Difficult</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">In JVM, does the perm gen space ever gets GC'ed?</td>
+                                                <td width="18%" class="qname">Java</td>
+                                                <td width="18%">Easy</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">It is not recommended to stop a thread by its stop method because - ?</td>
+                                                <td width="18%" class="qname">Java / Threading</td>
+                                                <td width="18%">Moderate</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="48%" class="qname">Is it possible to start a thread twice?</td>
+                                                <td width="18%" class="qname">Java / Threading</td>
+                                                <td width="18%">Easy</td>
+                                                <td width="18%">01 / 15 / 2018</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /main -->
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script>
+            /* off-canvas sidebar toggle */
+            $('[data-toggle=offcanvas]').click(function () {
+                $('.row-offcanvas').toggleClass('active');
+                $('.collapse').toggleClass('in').toggleClass('hidden-xs').toggleClass('visible-xs');
+            });
+        </script>
+
+    </body>
+</html>

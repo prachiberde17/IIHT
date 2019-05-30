@@ -1,0 +1,129 @@
+{
+  "defaultEnv": "default",
+  "environments": {
+    "default": {
+      "recipe": {
+        "type": "compose",
+        "content": "services:\n db:\n  image: eclipse/mysql\n  environment:\n   MYSQL_ROOT_PASSWORD: password\n   MYSQL_DATABASE: petclinic\n   MYSQL_USER: petclinic\n   MYSQL_PASSWORD: password\n  mem_limit: 1073741824\n dev-machine:\n  image: eclipse/ubuntu_jdk8\n  mem_limit: 2147483648\n  depends_on:\n    - db",
+        "contentType": "application/x-yaml"
+      },
+      "machines": {
+	     "db": {
+          "attributes": {},
+          "servers": {
+            "mysql": {
+              "attributes": {},
+              "port": "3306",
+              "protocol": "tcp"
+            }
+          },
+          "volumes": {},
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal"
+          ],
+          "env": {}
+        },
+        "dev-machine": {
+          "env": {},
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.ws-agent",
+            "org.eclipse.che.ls.php",
+            "org.eclipse.che.ls.json"
+          ],
+          "volumes": {},
+          "servers": {
+            "80/tcp": {
+              "protocol": "http",
+              "port": "80",
+              "attributes": {}
+            },
+            "8080/tcp": {
+              "protocol": "http",
+              "port": "8080",
+              "attributes": {}
+            },
+            "8000/tcp": {
+              "protocol": "http",
+              "port": "8000",
+              "attributes": {}
+            }
+          },
+          "attributes": {
+            "memoryLimitBytes": "2147483648"
+          }
+        }
+      }
+    }
+  },
+  "projects": [
+    {
+      "description": "${APP_DESC}",
+      "source": {
+        "location": "https://github.com/taniarascia/pdo.git",
+        "type": "git",
+        "parameters": {}
+      },
+      "links": [],
+      "mixins": [],
+      "problems": [],
+      "name": "PHP_FullStack_WithMySQL",
+      "type": "blank",
+      "path": "/${APP_USER}",
+      "attributes": {}
+    }
+  ],
+  "commands": [
+    {
+      "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || php ${editor.current.file.path}",
+      "name": "run php script",
+      "type": "custom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": ""
+      }
+    },
+    {
+      "commandLine": "[ -z ${editor.current.file.path} ] && echo \"Open a PHP file in the editor before executing this command.\" || QUERY_STRING=\"start_debug=1&debug_host=localhost&debug_port=10137\" php ${editor.current.file.path}",
+      "name": "debug php script",
+      "type": "custom",
+      "attributes": {
+        "goal": "Debug",
+        "previewUrl": ""
+      }
+    },
+    {
+      "commandLine": "service apache2 start && tail -f /var/log/apache2/access.log -f /var/log/apache2/error.log",
+      "name": "start apache",
+      "type": "custom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": "${server.80/tcp}/${current.project.relpath}"
+      }
+    },
+    {
+      "commandLine": "service apache2 stop",
+      "name": "stop apache",
+      "type": "custom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": ""
+      }
+    },
+    {
+      "commandLine": "service apache2 restart",
+      "name": "restart apache",
+      "type": "custom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": "${server.80/tcp}/${current.project.relpath}"
+      }
+    }
+  ],
+  "defaultEnv": "default",
+  "name": "${APP_USER}",
+  "attributes": {},
+  "links": []
+}

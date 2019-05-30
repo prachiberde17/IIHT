@@ -1,0 +1,100 @@
+{
+  "defaultEnv": "default",
+  "environments": {
+    "default": {
+      "recipe": {
+        "type": "compose",
+        "content": "services:\n db:\n  image: eclipse/mysql\n  environment:\n   MYSQL_ROOT_PASSWORD: password\n   MYSQL_DATABASE: petclinic\n   MYSQL_USER: petclinic\n   MYSQL_PASSWORD: password\n  mem_limit: 1073741824\n dev-machine:\n  image: eclipse/ubuntu_jdk8\n  mem_limit: 2147483648\n  depends_on:\n    - db",
+        "contentType": "application/x-yaml"
+      },
+      "machines": {
+	    "db": {
+          "attributes": {},
+          "servers": {
+            "mysql": {
+              "attributes": {},
+              "port": "3306",
+              "protocol": "tcp"
+            }
+          },
+          "volumes": {},
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal"
+          ],
+          "env": {}
+        },
+        "dev-machine": {
+          "env": {},
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.ws-agent"
+          ],
+          "volumes": {},
+          "servers": {
+            "5000/tcp": {
+              "protocol": "http",
+              "port": "5000",
+              "attributes": {}
+            },
+            "3000/tcp": {
+              "protocol": "http",
+              "port": "3000",
+              "attributes": {}
+            },
+            "9000/tcp": {
+              "protocol": "http",
+              "port": "9000",
+              "attributes": {}
+            }
+          },
+          "attributes": {
+            "memoryLimitBytes": "2147483648"
+          }
+        }
+      }
+    }
+  },
+  "projects": [
+    {
+      "description": "Angular PatternFly Starter Project.",
+      "source": {
+        "location": "https://github.com/che-samples/angular-patternfly-demo-app.git",
+        "type": "git",
+        "parameters": {}
+      },
+      "links": [],
+      "mixins": [],
+      "problems": [],
+      "name": "ANGULAR_FULLSTACK",
+      "type": "node-js",
+      "path": "/${APP_USER}",
+      "attributes": {}
+    }
+  ],
+  "commands": [
+    {
+      "commandLine": "cd ${current.project.path} \nnpm install --no-bin-links \nbower install",
+      "name": "angular-patternfly-starter:install dependencies",
+      "type": "custom",
+      "attributes": {
+        "goal": "Build",
+        "previewUrl": ""
+      }
+    },
+    {
+      "commandLine": "cd ${current.project.path} \ngrunt server --force",
+      "name": "angular-patternfly-starter:run",
+      "type": "custom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": "${server.3000/tcp}"
+      }
+    }
+  ],
+  "defaultEnv": "default",
+  "name": "${APP_USER}",
+  "attributes": {},
+  "links": []
+}

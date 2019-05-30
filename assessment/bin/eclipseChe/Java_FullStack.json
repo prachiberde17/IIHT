@@ -1,0 +1,99 @@
+{
+  "defaultEnv": "default",
+  "environments": {
+    "default": {
+      "machines": {
+        "db": {
+          "attributes": {},
+          "servers": {
+            "mysql": {
+              "attributes": {},
+              "port": "3306",
+              "protocol": "tcp"
+            }
+          },
+          "volumes": {},
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal"
+          ],
+          "env": {}
+        },
+        "dev-machine": {
+          "attributes": {},
+          "servers": {
+            "tomcat8-debug": {
+              "attributes": {},
+              "port": "8000",
+              "protocol": "http"
+            },
+            "codeserver": {
+              "attributes": {},
+              "port": "9876",
+              "protocol": "http"
+            },
+            "tomcat8": {
+              "attributes": {},
+              "port": "8080",
+              "protocol": "http"
+            }
+          },
+          "volumes": {
+            "m2": {
+              "path": "/home/user/.m2"
+            },
+            "javadata": {
+              "path": "/home/user/jdtls/data"
+            }
+          },
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.ws-agent",
+            "org.eclipse.che.ls.java"
+          ],
+          "env": {}
+        }
+      },
+      "recipe": {
+        "type": "compose",
+        "content": "services:\n db:\n  image: eclipse/mysql\n  environment:\n   MYSQL_ROOT_PASSWORD: password\n   MYSQL_DATABASE: petclinic\n   MYSQL_USER: petclinic\n   MYSQL_PASSWORD: password\n  mem_limit: 1073741824\n dev-machine:\n  image: eclipse/ubuntu_jdk8\n  mem_limit: 2147483648\n  depends_on:\n    - db",
+        "contentType": "application/x-yaml"
+      }
+    }
+  },
+  "projects": [
+    {
+		"links": [],
+		"name": "Java_Assignment",
+		"attributes": {
+			"contribute_to_branch": [
+				"master"
+			]
+		},
+		"type": "maven",
+		"source": {
+			"location": "https://github.com/che-samples/web-java-spring",
+			"type": "git",
+			"parameters": {}
+		},
+		"path": "/${APP_USER}",
+		"description": "${APP_DESC}",
+		"problems": [],
+		"mixins": [
+			"pullrequest"
+		]
+	}
+  ],
+  "name": "${APP_USER}",
+  "attributes": {},
+  "commands": [
+    {
+      "commandLine": "mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e 'show databases;'",
+      "name": "show databases",
+      "attributes": {},
+      "type": "custom"
+    }
+  ],
+  "links": []
+}

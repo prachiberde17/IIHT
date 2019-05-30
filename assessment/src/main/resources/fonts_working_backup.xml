@@ -1,0 +1,19 @@
+<fontFamilies>
+
+<fontFamily name="Lohit-Devanagari">
+
+    <normal>fonts/hindi/Lohit-Devanagari.ttf</normal>
+
+    <bold>fonts/hindi/Lohit-Devanagari.ttf</bold>
+
+    <italic>fonts/hindi/Lohit-Devanagari.ttf</italic>
+
+    <boldItalic>fonts/hindi/Lohit-Devanagari.ttf</boldItalic>
+
+    <pdfEncoding>Identity-H</pdfEncoding>
+
+    <pdfEmbedded>true</pdfEmbedded>
+
+  </fontFamily>
+
+</fontFamilies>

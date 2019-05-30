@@ -1,0 +1,19 @@
+<fontFamilies>
+
+<fontFamily name="arial-unicode-ms">
+
+    <normal>fonts/arial-unicode-ms/ARIALUNI.ttf</normal>
+
+    <bold>fonts/arial-unicode-ms/ARIALUNI.ttf</bold>
+
+    <italic>fonts/arial-unicode-ms/ARIALUNI.ttf</italic>
+
+    <boldItalic>fonts/arial-unicode-ms/ARIALUNI.ttf</boldItalic>
+
+    <pdfEncoding>Identity-H</pdfEncoding>
+
+    <pdfEmbedded>true</pdfEmbedded>
+
+  </fontFamily>
+
+</fontFamilies>

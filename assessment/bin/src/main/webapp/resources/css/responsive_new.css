@@ -1,0 +1,489 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #282f3d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav li{
+    padding: 10px;
+    padding-left: 30px;
+}
+.sidenav ul{
+    color: #fff;
+}
+.sidenav li ul{
+    padding-left: 10px;
+    color: #fff;
+}
+.sidenav ul li a{
+    text-decoration: none;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+.sidenav a {
+    padding: 0 !important;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sidenav li a:hover {
+    color: #f1f1f1;
+    background: none !important;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.headertopbottom .moblogo{
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.headertopbottom .moblogo img{
+    width: 20%;
+}
+.togglesidemenu{
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    top:30%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .togglesidemenu{
+        display: none;
+    }
+    .mobileheadericon{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .mobileheadericon{
+        display: block;
+        width: 60px;
+    }
+    .navmenu{
+        display: none;
+    }
+    .desktopheadericon{
+        display: none;
+    }
+    .togglesidemenu{
+        position: inherit;
+        float: left;
+        text-align: center;
+        left: 0;
+        top:0;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 25px;
+        opacity: 0.5;
+    }
+
+    .headertop .headericons{
+        width: 23%;
+    }
+    .headertop .userinfo span{
+        display: none;
+    }
+    .headertop .userinfo{
+        width: 20%;
+    }
+    .header .headerbottom .bottomnavmenu{
+        display: none;
+    }
+
+    .headertop .headericons .moreicons{
+        width: 300px;
+        right: -110px;
+    }
+    .headertop .headericons .moreicons .dropcurve{
+        left: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .mentor .leftside{
+        padding-left: 0;
+    }
+    .learning_board .skilltable .mentortabledata{
+        margin-top: 0;
+    }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+    .loginheader .left{
+        width: 20%;
+    }
+    .loginheader .right{
+        width: 75%;
+    }
+    .popularcourse .slick-list{
+        padding: 0 0px !important;
+    }
+    .visitourcommunity .studentcommunity{
+        top:10%;
+    }
+    
+    
+    .headertop .navigationmenu ul li a{
+        font-size: 10px;
+    }
+    .headertop .navigationmenu ul li.homemenu a{
+        padding-top: 10px;
+    }
+    .headertop .headericons{
+        width: 35%;
+    }
+    .headertop .userinfo{
+        width: 65%;
+    }
+    
+    
+}
+@media (min-width: 991px) and (max-width: 1180px) {
+    .header .headerbottom .bottomnavmenu ul{
+        width: 85%;
+    }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    .visitourcommunity .studentcommunity{
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+    .footerlogin{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .recentcourses .recent .recentitem .itemname{
+        width: 45%;
+    }
+    .recentcourses .recent .recentitem .itemdate{
+        width: 25%;
+    }
+    .recentcourses .recent .recentitem .itemplay{
+        width: 20%;
+    }
+    .recentcourses .sedebar{
+        margin: 0 auto;
+        width: 50%;
+        float: none;
+        margin-top: 20px;
+    }
+    .recentcourses .sedebar .widget{
+        margin-top: 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mentortabledata{
+        display: block;
+        overflow-y: auto;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .mentortabledata table{
+        width: 900px !important;
+    }
+    .mentortabledata{
+        scrollbar-face-color: #367CD2;
+        scrollbar-shadow-color: #FFFFFF;
+        scrollbar-highlight-color: #FFFFFF;
+        scrollbar-3dlight-color: #FFFFFF;
+        scrollbar-darkshadow-color: #FFFFFF;
+        scrollbar-track-color: #FFFFFF;
+        scrollbar-arrow-color: #FFFFFF;
+    }
+    .onlinecourses .courseitem .onlinecoursesitems .item .courseiteminfo h4{
+        font-size: 14px;
+    }
+    
+    .mentor .skilltable .selectskills .skilldropdown{
+        width: 70%;
+    }
+    
+    .mentor .skilltable .selectskills .addskill{
+        width: 25%;
+    }
+    .tabrightside{
+        width: 40%;
+    }
+    
+    
+
+
+}
+@media screen and (max-width: 767px) {
+    .mentortabledata{
+        display: block;
+        overflow-y: auto;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .mentortabledata table{
+        width: 900px !important;
+    }
+    .mentortabledata{
+        scrollbar-face-color: #367CD2;
+        scrollbar-shadow-color: #FFFFFF;
+        scrollbar-highlight-color: #FFFFFF;
+        scrollbar-3dlight-color: #FFFFFF;
+        scrollbar-darkshadow-color: #FFFFFF;
+        scrollbar-track-color: #FFFFFF;
+        scrollbar-arrow-color: #FFFFFF;
+    }
+    .mentor .rightside{
+        padding-top: 50px;
+    }
+    
+    
+    .loginheader .logo{
+        text-align: center;
+    }
+    .loginform{
+        width: 100%;
+    }
+    .loginform input[type="text"], .loginform input[type="password"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .loginform input[type="submit"]{
+        width: 100%;
+    }
+    .latesttechademy .left,
+    .latesttechademy .right{
+        width: 100%;
+    }
+    .popularcourse .slick-list{
+        padding: 0 !important;
+    }
+    .popularcourse .slick-slide{
+        opacity: 100;
+    }
+    .visitourcommunity .studentcommunity{
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        top:5%;
+    }
+    
+    .userprofile .profileleft{
+        margin-top: 50px;
+    }
+    
+    .searchcommunitybanner .searchcommunity{
+        position: inherit;
+    }
+    .learn_score .scorer_card_bottom{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+   /* .learn_score{
+        display: inline;
+        margin: 20px 0;
+    }*/
+
+    
+}
+@media (min-width: 551px) and (max-width: 767px) {
+    .recentcourses .recent .recentitem .itemname{
+        width: 60%;
+    }
+    .courserecommendations .item{
+        padding: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .onlinecourses .courseitem .onlinecoursesitems .itemdiv{
+        width: 50%;
+    }
+    .badgesitems .badgesdiv .itemdiv{
+        width: 50%;
+    }
+    .coursetabs .nav-tabs li a{
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .coursetabs .nav-tabs{
+        margin-bottom: 20px;
+    }
+    .learningpathdata .tab-content .itemdiv{
+        width: 50%;
+    }
+    .tabrightside{
+        width: 35%;
+    }
+    .listgridview a{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .topbanner h3{
+        font-size: 30px;
+        top: 6%;
+    }
+    .requestmentortab{
+        padding-bottom: 15px;
+    }
+    .requestmentortab ul li.active{
+        margin-bottom: 10px;
+    }
+    .mentor .skilltable .selectskills .skilldropdown{
+        width: 100%;
+        text-align: center;
+    }
+    .mentor .skilltable .selectskills h5{
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .mentor .skilltable .selectskills .skilldropdown .dropdownskill{
+        width: 100%;
+        padding-left: 0;
+    }
+    .mentor .skilltable .selectskills .addskill{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .mentordiscussion .discussion-box.even{
+        margin-right: 15px;
+    }
+    .mentordiscussion .discussion-box.odd, .mentordiscussion .join-discussion-box{
+        margin-left: 15px;
+    }
+    .mentordiscussion .discussion-box .discuss-bottom div{
+        margin-bottom: 10px;
+    }
+    .footer ul li{
+        float: left;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+    .footer .copyright{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .visitourcommunity .studentcommunity{
+        width: 100%;
+        position: inherit;
+        left: 0;
+    }
+    .coursecategory{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footerlogin{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footerlogin .item{
+        padding-bottom: 20px;
+    }
+    
+    .recentcourses .recent .recentitem .itemname{
+        width: 80%;
+        padding-bottom: 10px;
+    }
+    .recentcourses .recent .recentitem .itemdate,
+    .recentcourses .recent .recentitem .itemplay{
+        width: 50%;
+    }
+    .courserecommendations .item{
+        padding: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    
+    .onlinecourses .courseitem .heading .watched{
+        width: 100%;
+    }
+    .onlinecourses .courseitem .heading .watched p{
+        width: 100%;
+    }
+    .onlinecourses .courseitem .heading .watched .progress{
+        width: 100% !important;
+    }
+    .onlinecourses .courseitem .heading .watched{
+        padding-left: 35px;
+    }
+    
+    
+    .coursetabs .nav-tabs{
+        width: 100%;
+    }
+    .nav-tabs > li{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .coursetabs .nav-tabs li a{
+        border-radius: 100px !important;
+    }
+    .mylearningtab .selectyear{
+        width: 100%;
+    }
+    
+    .tabrightside{
+        width: 75%;
+    }
+    
+    .coursesitemslist .courseitem .item .image{
+        width: 100%;
+    }
+    .coursesitemslist .courseitem .item .iteminfo{
+        width: 100%;
+    }
+    
+    .panel-title,
+    .mentorlessons .panel-body ul li.assigment a,
+    .mentorlessons .panel-body ul li.assigment p{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+.mentor-request-right-side .mentor-card .mentor-side-title .reach-btn{
+    float: none;
+    display: block;
+    margin-top: 15px;
+}
+.panel-heading{
+    display: inline-block;
+}
+.panel-heading > div{
+    margin:5px 0;
+}
+.mentorlessons .panel a{
+    display: block;
+}
+.mentorintro .left{
+    display: block;
+}
+.mentorlessons .panel-body ul li.assigment p{
+    padding: 10px 0;
+}
+.mentorlessons .panel-body ul li.assigment a{
+    margin-left: 0;
+}
+.mentorlessons .right{
+    float: left;
+    padding: 10px 0;    
+}
+}

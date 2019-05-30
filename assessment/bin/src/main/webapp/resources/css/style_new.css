@@ -1,0 +1,885 @@
+body{
+    font-size: 14px;
+    font-family: 'Roboto' !important;
+}
+h1, h2, h3, h4, h5, h6, body {
+    font-family: inherit;
+    font-family: 'Roboto' !important;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a:active,
+a:focus{
+    outline: none;
+}
+
+
+/* Header */
+.header{
+    float:left;
+    width:100%;
+    padding: 25px 15px;
+}
+.header .headerright{ 
+    float:left;
+    width:100%;
+}
+.header .headerright .headericons{ 
+    float:left;
+    border-right:1px solid #979797;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.header .headerright .headericons i{
+    color:#B2B2B2;
+    font-size:16px;
+}
+.header .headerright .headericons a{
+    padding:0 20px;
+}
+.header .headerright .loginform{
+    float:right;
+}
+.header .headerright .loginform .formfield{
+    float:left;
+    width:42%;
+    padding-right:15px;
+}
+.header .headerright .loginform .formfield input{
+    width:100%;
+    float:left;
+    border:1px solid #BFE0F2;
+    padding: 7px;
+    border-radius:5px;
+    color: #000000;
+    font-family: Roboto !important;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.23px;
+    line-height: 17px;
+    text-align: left;
+}
+.header .headerright .loginform input[type="submit"]{
+    background-color:#0082DC;
+    color:#fff;
+    border:none;
+    padding: 8px 20px;
+    border-radius:4px;
+}
+
+
+
+.creationtimeline{
+    float:left;
+    width:100%;
+    padding-top:30px;
+}
+.creationtimeline .creationcontent{
+    float:left;
+    width:100%;
+    padding-top:50px;
+    text-align: left;
+}
+.creationtimeline .creationcontent h3{
+    color: #1E2125;
+    font-family: Muli !important;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    padding-bottom:25px;
+} 
+.creationtimeline .creationcontent p{
+    font-size:20px;
+    color:#577592;
+}
+
+
+.loginservices{
+    float:left;
+    width:100%;
+    padding: 25px 15px;
+    padding-bottom:80px;
+}
+.loginservices .item h3{
+    color: #001021;
+    font-family: Muli !important;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    text-align: left;
+}
+.loginservices .item p{
+    color: #577592;
+    font-family: Roboto !important;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.33px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.logincopyright{
+    float:left;
+    width:100%;
+    padding: 25px 30px;
+}	
+.logincopyright p{
+    color: #9B9B9B;
+    font-family: Roboto !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin-bottom:0;
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .header .headerright .headericons a{
+        padding: 0 8px;
+    }
+}
+
+
+
+/* start test page */
+
+.header .userheader {
+    float:right;
+}
+.header .userheader .userinfo{
+    float:right;
+    text-align:right;
+}
+.header .userheader .userinfo h4{
+    float:left;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: right;
+    padding-right:15px;
+    margin-bottom:0;
+}
+.header .userheader .userinfo span{
+    color:#B2B2B2;
+    float:right;
+    width:100%;
+}
+
+
+.starttestinfo{
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    float:right;
+    width:70%;
+    padding:15px;
+    margin-right:50px;
+}
+.starttestinfo .testname{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.starttestinfo .testname h3{
+    color: #001021;
+    font-family: Muli;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-top:10px;
+}
+.starttestinfo .totalque{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.starttestinfo .totalque span{
+    padding: 0 10px;
+}
+.starttestinfo .publishdate{
+    float:left;
+    width:100%;
+    text-align:center;
+    padding-top:30px;
+}
+.starttestinfo .publishdate span{
+    float:left;
+    width:50%;
+}
+.starttestinfo .startbutton{
+    float:left;
+    width:100%;
+    text-align:center;
+    padding-top:40px;
+}
+.starttestinfo .startbutton a{
+    background-color: #03A9F4;
+    padding:10px;
+    float:left;
+    width:100%;
+    text-align:center;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.starttestinfo .publishdate i{
+    padding-right:10px;
+}
+
+.importantinstruction{
+    float:left;
+    width:100%;
+    padding: 25px 15px; 
+    background-color: rgba(240, 209, 108, 0.1);
+    padding-bottom:0;
+    margin-top:50px;
+}
+.importantinstruction h3{
+    color: #001021;
+    font-family: Muli;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    padding-bottom:10px;
+}
+.importantinstruction p{
+    color: #577592;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.33px;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom:50px;
+}
+.importantinstruction .item .introicon{
+    float:left;
+    width:10%;
+}
+.importantinstruction .item p{
+    float:left;
+    width:90%;
+    padding-left:15px;
+    color: #577592;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 22px;
+    margin-bottom:0;	
+}
+
+
+
+.testheader{
+    float:left;
+    width:100%;
+    background-color: rgba(1, 166, 255, 0.1);
+    padding:15px;
+}
+.testheader .testinfo{
+    float:left;
+    padding-left:285px;
+}
+.testheader .testinfo .testimg{
+    float:left;
+    width:30%;
+    padding-right:10px;
+}
+.testheader .testinfo .testname{
+    float:left;
+}
+.testheader .testinfo .testname h3{
+    margin-top:0;
+    margin-bottom:5px;
+}
+
+.testheader .durationinfo{
+    float:right;
+    padding: 12px 0px;
+}
+.testheader .durationinfo span{
+    color: #5E676B;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin: 0 12px;
+}
+.testheader .durationinfo span i{
+    margin-right:7px;
+}
+.testheader .durationinfo span.time{
+    border: 1px solid #E2E2E2;
+    padding:5px 10px;
+    background-color: #FFFFFF;
+    border-radius:5px;
+    color: #323232;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.testheader .durationinfo span.finish{
+    border: 1px solid #EE4E5A;
+    padding:7px 15px;
+    background-color: #FFFFFF;
+    border-radius:5px;
+    color: #323232;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.testheader .durationinfo span.finish a{
+    text-decoration:none;
+    color: #EE4E5A;
+    font-size: 14px;
+}
+
+.examquestions{
+    float:left;
+    width:100%;
+}
+.examquestions .menuitem{
+    float:left;
+    width:20%;
+    padding-top:70px;
+}
+.examquestions .menuitem ul{
+    float:left;
+    width:100%;
+}
+.examquestions .menuitem ul li{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.examquestions .menuitem ul li a{
+    color: #000020;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    padding:10px 0px;
+    float:left;
+    width:100%;
+    text-decoration:none;
+        cursor: pointer;
+}
+.examquestions .menuitem ul li.active a{
+    background-color: rgba(1, 166, 255, 0.19) !important;
+}
+
+.queanscenter{
+    float:left;
+    width:80%;
+}
+.queanscenter{
+    float:left;
+    width:80%;
+    padding-top:20px;
+    padding-left:30px;
+}
+.queanscenter .progressing{
+    float:left;
+    background-color: #D9D9D9;
+    width: 205px;
+    height: 4px;
+}
+.queanscenter .queprogress{
+    float:left;
+    padding-left:65px;
+}
+.queanscenter .queprogress span{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.queanscenter .progressing span{
+    height: 4px;
+    background-color:#00C1A8;
+    float:left;
+}
+.queanscenter .queprogress span.quepercent{
+    position:relative;
+    top:-10px;
+    left:10px;
+    color:#00C1A8;
+}
+.examquestions .queanscenter{
+    float:left;
+    width:65%;
+}
+.examquestions .queanscenter#section2_content{
+	width:80%;
+	font-family:monospace;
+}
+
+.examquestions .queanscenter#section1_content{
+	width:80%;
+}
+.examquestions .queanscenter#section3_content{
+	width:80%;
+}
+
+.examquestions .questionname {
+    float:left;
+    width:100%;
+}
+.examquestions .questionname .queno{
+    float:left;
+    width:7%;
+}
+.examquestions .questionname .queno span{
+    background-color: #006DB8;
+    border-radius: 100%;
+    padding:10px 12px;
+    float:left;
+    color:#fff;
+    font-weight: 400;
+}
+.examquestions .questionname .qname{
+    float:left;
+    width:93%;
+    margin-top:0px;
+    color: #323232;
+    font-family: Muli !important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+.questionname .answers{
+    float:left;
+    width:100%;
+    padding-left:65px;
+    padding-top:15px;
+}
+.questionname .answers ul li{
+    color: #5E676B;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    padding-bottom:15px;
+    float:left;
+}
+.questionname .answers ul li label{
+    float:left;
+    width:9%;
+}
+.questionname .answers ul li label span.letter{
+    color: #B2B2B2;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    padding:0px 4px;
+    position:relative;
+    top:-1px;
+    margin-right:5px;
+}
+.questionname .answers ul li.highlight label span.letter {
+    background-color: rgba(87, 117, 146, 0.68);
+    color: #fff;
+    position: relative;
+    top: -3px;
+    padding: 2px 6px;
+    border: none;
+}
+
+.questionname .answers ul li p{
+    float:left;
+    width:91%;
+}
+
+.questionname .typecomment{
+    float:left;
+    width:100%;
+    padding-left:65px;
+    padding-bottom:50px;
+}
+.questionname .typecomment input{
+    border:none;
+    border-bottom:1px solid #808080;
+    width:100%;
+    padding:10px;
+    color: #001021;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    opacity: 0.5;
+    text-align: left;
+}
+.questionname .typecomment input:focus{
+    outline:none;
+}
+.examquestions .flagdiv{
+    float:left;
+    width:15%;
+    text-align:center;
+    padding-top:90px;
+}
+.examquestions .flagdiv a{
+    background-color: #FFFFFF;
+    border: 1px solid #FD8500;
+    color: #FD8500;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    padding: 7px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    position:relative;
+}
+.examquestions .flagdiv a i{
+    margin-right:10px;
+}
+
+.backprevbtn{
+    background-color: #C9CED1;
+    float:left;
+    width:100%;
+    padding:20px 0px;
+        margin-top: 150px;
+}
+.backprevbtn .left{
+    float:left;
+    width:20%;
+    text-align:center;
+}
+.backprevbtn .left label{
+    float:left;
+    width:100%;
+    margin-bottom:0;
+}
+.backprevbtn .left i{
+    color:#179BE5;
+}
+.backprevbtn .center {
+    float: left;
+    width: 100%;
+    padding-left: 85px;
+    text-align: center;
+}
+.backprevbtn .center a.back{
+    background-color: #179BE5;
+    border: 1px solid #179BE5;
+    padding:8px 15px;
+    border-radius:5px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-decoration:none; 
+}
+.backprevbtn .center a.back i{
+    margin-right:10px;
+}
+.backprevbtn .center a.next{
+    background-color: #179BE5;
+    border: 1px solid #179BE5;
+    padding:8px 15px;
+    border-radius:5px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    text-decoration:none;
+}
+.backprevbtn .center a.next i{
+    margin-left:20px;
+}
+.blurque{
+    float:left;
+    width:100%;
+}
+.blurque:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    width: 100%;
+    height: 8em;
+}
+.blurque .queno {
+    float: left;
+    width: 7%;
+}
+.blurque .queno span {
+    background-color: #B3C1CB;
+    border-radius: 100%;
+    padding: 10px 12px;
+    float: left;
+    color: #fff;
+    font-weight: 400;
+}
+.blurque .qname {
+    float: left;
+    width: 93%;
+    margin-top: 0px;
+    color: #5E676B;
+    font-family: Muli !important;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+}
+
+
+.questionname{
+    position:relative;
+}
+.verticalline{
+    position:absolute;
+    width:2px;
+    height:90%;
+    left:19px;
+    top:40px;
+    background-color:#979797;
+    opacity: 0.2116371268656717;
+}
+
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+[type="radio"] + span:not(.lever) {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[type="radio"].filled-in:checked + span:not(.lever)::before {
+    top: 0;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="radio"].filled-in + span:not(.lever)::before, [type="radio"].filled-in + span:not(.lever)::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+}
+[type="radio"]:checked + span:not(.lever)::before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #26a69a;
+    border-bottom: 2px solid #26a69a;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="radio"] + span:not(.lever)::before, [type="radio"]:not(.filled-in) + span:not(.lever)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+[type="radio"] + span:not(.lever) {
+    cursor: pointer;
+    line-height: 25px;
+    font-size: 1rem;
+}
+[type="radio"].filled-in:checked + span:not(.lever)::after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #006cff;
+    background-color: #006cff;
+    z-index: 0;
+}
+[type="radio"].filled-in + span:not(.lever)::before, [type="radio"].filled-in + span:not(.lever)::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+}
+[type="radio"].filled-in + span:not(.lever)::after {
+    border-radius: 2px;
+}
+
+
+.headerinfos li{
+    font-size: 18px;
+    float: left;
+}
+.headerinfos li:first-child{
+    padding-right: 30px;
+}
+.headerinfos li i{
+    margin-right: 10px;
+}
+.loginformnew h3{
+    font-weight: bold;
+}
+.loginformnew label{
+    float: left;
+    width: 100%;
+    font-weight: normal;
+    font-size: 18px;
+}
+.loginformnew input{
+    width:100%;
+    float:left;
+    border:1px solid #BFE0F2;
+    padding: 10px;
+    border-radius:5px;
+    color: #000000;
+    font-family: Roboto !important;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.23px;
+    line-height: 17px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.loginformnew input[type="submit"]{
+    background-color:#0082DC;
+    color:#fff;
+    border:none;
+    padding: 15px;
+    border-radius:4px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.loginformnew a{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.queanscenter .leftside{
+    padding-bottom: 20px;
+}
+.queanscenter .rightside{
+    padding-bottom: 20px;
+}
+.queanscenter .leftside .runcode{
+    background-color: #179BE5;
+    border: 1px solid #179BE5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+	margin-right: 2px;
+}
+.queanscenter .leftside label{
+    font-size: 20px;
+    float: left;
+    width: 100%;
+}
+.queanscenter .leftside textarea{
+    height: 200px;
+    width: 100%;
+    color: #000;
+    padding: 10px;
+    border:1px solid #BFE0F2;
+}
+
+.queanscenter .rightside .description{
+    float: left;
+    width: 100%;
+    border: 1px solid #BFE0F2;
+    padding: 10px;
+}
+.queanscenter .rightside .description label{
+    font-size: 20px;
+}
+.queanscenter .rightside .description p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.queanscenter .rightside .description h4{
+    padding-top: 5px;
+    float: left;
+    width: 100%;
+}
+.queanscenter .rightside .description code{
+    background-color: rgba(1, 166, 255, 0.1);
+    float: left;
+    width: 100%;
+    padding: 10px;
+}

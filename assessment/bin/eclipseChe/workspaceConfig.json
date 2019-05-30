@@ -1,0 +1,93 @@
+{
+  "defaultEnv": "default",
+  "environments": {
+    "default": {
+      "machines": {
+        "dev-machine": {
+          "attributes": {
+            "memoryLimitBytes": "2147483648"
+          },
+          "servers": {
+            "tomcat8-debug": {
+              "attributes": {},
+              "port": "8000",
+              "protocol": "http"
+            },
+            "tomcat8": {
+              "attributes": {},
+              "port": "8080",
+              "protocol": "http"
+            }
+          },
+          "volumes": {
+            "m2": {
+              "path": "/home/user/.m2"
+            },
+            "javadata": {
+              "path": "/home/user/jdtls/data"
+            }
+          },
+          "installers": [
+            "org.eclipse.che.exec",
+            "org.eclipse.che.terminal",
+            "org.eclipse.che.ws-agent",
+            "org.eclipse.che.ls.java"
+          ],
+          "env": {}
+        }
+      },
+      "recipe": {
+        "type": "dockerimage",
+        "content": "eclipse/ubuntu_jdk8"
+      }
+    }
+  },
+  "projects": [
+    {
+		"links": [],
+		"name": "Java_Assignment",
+		"attributes": {
+			"contribute_to_branch": [
+				"master"
+			]
+		},
+		"type": "maven",
+		"source": {
+			"location": "https://github.com/che-samples/console-java-simple.git",
+			"type": "git",
+			"parameters": {}
+		},
+		"path": "/${APP_USER}",
+		"description": "${APP_DESC}",
+		"problems": [],
+		"mixins": [
+			"pullrequest"
+		]
+	}
+  ],
+  "name": "${APP_USER}",
+  "attributes": {
+    "persistVolumes": "true"
+  },
+  "commands": [
+    {
+      "commandLine": "mvn clean install -f ${current.project.path}",
+      "name": "build",
+      "attributes": {
+        "goal": "Build",
+        "previewUrl": ""
+      },
+      "type": "mvn"
+    },
+    {
+      "commandLine": "echo \"hello\"",
+      "name": "newCustom",
+      "attributes": {
+        "goal": "Run",
+        "previewUrl": ""
+      },
+      "type": "custom"
+    }
+  ],
+  "links": []
+}
